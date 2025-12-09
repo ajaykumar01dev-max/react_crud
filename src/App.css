@@ -1,0 +1,203 @@
+.headerSection {
+  width: 100%;
+  background-color: #4a90e2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 140px;
+
+}
+
+.headerSection .btn {
+  background-color: #ffffff;
+  color: #4a90e2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.idCard {
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 17px;
+  position: relative;
+  overflow: hidden;
+}
+
+.idCard .idCardHeader {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+.idCard .idCardContent {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+}
+
+.idCard .idCardContent .photoSection {
+  width: 28%;
+}
+
+.idCard .idCardContent .photoSection img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.idCard .idCardContent .detailsSection {
+  width: 72%;
+
+}
+
+.idCard .idCardFooter {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #777777;
+}
+
+.actionButtons {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+.actionButtons .editButton{
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.actionButtons .saveButton{
+  background-color: #50c878;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actionButtons .deleteButton{
+  background-color: #e94e4e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.idCard:hover .actionButtons {
+  transform: translateX(0);
+}
+
+.popUpWindo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 540px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.formTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a90e2;
+  font-size: 24px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.formInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.formButtonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.addBtn {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+.closeBtn {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
